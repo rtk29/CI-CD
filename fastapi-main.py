@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import pickle
 from CustomerChurn import Churn
 import pandas as pd 
+#import numpy as np
 
 # Instantiate the FastAPI class
 app = FastAPI()
