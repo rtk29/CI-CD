@@ -14,7 +14,7 @@ churn_classifier = pickle.load(pickle_in)
 # Specify the route for the API(URL)
 @app.get('/')
 async def get():
-    return {'Intro': 'Hello World', 'Number': '12121'}
+    return {'Intro': 'Hello World', 'Number': '35252525'}
 
 # Store all the independent and dependent features in a list
 features = ['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary', 
