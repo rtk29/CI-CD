@@ -45,7 +45,7 @@ async def predict_customer_churn(input: Churn):
     # Store user input and prediction in the DataFrame
     user_data.loc[len(user_data)] = [input[key] for key in features[:-1]] + [prediction]
     
-    # Save the DataFrame to an Excel file
+    # Save the DataFrame to an excel file
     user_data.to_excel('user_data_predictions.xlsx', index=False)
     
     return {'Customer Churn Prediction': prediction}
