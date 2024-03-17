@@ -10,7 +10,7 @@ COPY requirements.txt .
 # Install the Python dependencies
 RUN pip install -r requirements.txt
 
-# Copy the application code to the working directory
+# Copy the application code and all the files to the working directory
 COPY . /application
 
 # Expose the port on which the application will run
